@@ -1,0 +1,22 @@
+{
+  "name": "qa-automation-exercise",
+  "version": "1.0.0",
+  "description": "Hi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarvis-m42/QA-Automation-exercise.git"
+  },
+  "author": "Rohit Bhosale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarvis-m42/QA-Automation-exercise/issues"
+  },
+  "homepage": "https://github.com/jarvis-m42/QA-Automation-exercise#readme",
+  "dependencies": {
+    "cypress": "^13.14.2"
+  }
+}
