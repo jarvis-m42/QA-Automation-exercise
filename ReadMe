@@ -1,1 +1,17 @@
-Hi
+Steps to Run tests:
+
+First Clone this repo.
+Run npm i
+Run npx cypress open to run test in UI mode
+Run npx cypress run to run test in headless mode
+
+Jmx file added in Repo for Performance results.
+
+
+Cypress test Results
+
+![alt text](image.png)
+
+Jmeter test results
+
+![alt text](image-1.png)

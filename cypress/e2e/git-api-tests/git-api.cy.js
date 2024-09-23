@@ -19,7 +19,7 @@ describe('Git API Tests', () => {
             method: 'GET',
             url: 'https://api.github.com/user',
             failOnStatusCode: false,
-            headers: {"Authorization": "Bearer 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J0"
+            headers: {"Authorization": "Bearer aaa"
             }
         }).then((response) => {
             expect(response.status).to.eq(401)
@@ -33,7 +33,7 @@ describe('Git API Tests', () => {
             method: 'GET',
             url: 'https://api.github.com/user',
          
-            headers: {"Authorization": "Bearer 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"
+            headers: {"Authorization":  `Bearer ${Cypress.env('access_token')}`
             }
 
         }).then((response) => {
@@ -42,13 +42,13 @@ describe('Git API Tests', () => {
         });
     });
 
-    it('Get user bio with token', () => {
+    it('Update user bio with token', () => {
        
         cy.request({
             method: 'PATCH',
             url: 'https://api.github.com/user',
          
-            headers: {"Authorization": "Bearer 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"
+            headers: {"Authorization": `Bearer ${Cypress.env('access_token')}`,
             },
             body: {
                 "bio": "I love coding"
